@@ -21,7 +21,7 @@ export class BackendAdminPanelStack extends cdk.Stack {
           CLIENT_SECRET:configService.get('CLIENT_SECRET'),
           NODE_ENV:configService.get('NODE_ENV')
         };
-        
+        console.log("environmentVariables:",environmentVariables)
       }
 
        // Reference the existing ECR repository
